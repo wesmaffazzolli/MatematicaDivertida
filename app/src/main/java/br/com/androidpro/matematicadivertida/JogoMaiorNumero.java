@@ -180,11 +180,11 @@ public class JogoMaiorNumero extends AppCompatActivity {
     }
 
     public void limpaResposta() {
-        if(resposta.toString() != "") {
+        if(!resposta.toString().equals("")) {
             resposta.setText("");
         }
 
-        if(numeros.toString() != "") {
+        if(!numeros.toString().equals("")) {
             numeros.setText("");
         }
     }
