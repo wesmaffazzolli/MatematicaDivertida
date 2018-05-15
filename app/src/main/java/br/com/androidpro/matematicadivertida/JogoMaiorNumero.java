@@ -52,8 +52,8 @@ public class JogoMaiorNumero extends AppCompatActivity {
         //define um botão como positivo
         builder.setPositiveButton("Ok, vamos para a próxima", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface arg0, int arg1) {
-                if(contadorInicial == contadorFinal) {
-                    instaciaDialogFinal("Fim de jogo!", "Sua nota é: "+String.valueOf(nota));
+                if (contadorInicial == contadorFinal) {
+                    instaciaDialogFinal("Fim de jogo!", "Sua nota é: " + String.valueOf(nota));
                     reiniciaJogo();
                     preencheCampos();
                 } else {
@@ -98,21 +98,21 @@ public class JogoMaiorNumero extends AppCompatActivity {
 
     public void valida(View view) {
 
-        if(resposta.length() != 0) {
+        if (resposta.length() != 0) {
             int respostaDoUsuario = Integer.parseInt(resposta.getText().toString());
 
             // Check if no view has focus:
             view = this.getCurrentFocus();
             if (view != null) {
-                InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                 imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
             }
 
-            if(respostaDoUsuario == resultado){
+            if (respostaDoUsuario == resultado) {
                 nota = nota + 20;
                 instaciaDialog("Você acertou! :D", "Resultado: " + String.valueOf(respostaDoUsuario));
             } else {
-                instaciaDialog("Você errou! :(", "Você respondeu "+String.valueOf(respostaDoUsuario)+", porém o resultado é: "+String.valueOf(resultado));
+                instaciaDialog("Você errou! :(", "Você respondeu " + String.valueOf(respostaDoUsuario) + ", porém o resultado é: " + String.valueOf(resultado));
             }
 
         } else {
@@ -129,43 +129,46 @@ public class JogoMaiorNumero extends AppCompatActivity {
         limpaResposta();
 
         // num1 é o maior
-        if(num1 > num2 && num1 > num3) {
+        if (num1 >= num2 && num1 >= num3) {
             maior = num1;
-            if(num2 > num3) {
+            if (num2 > num3) {
                 meio = num2;
                 menor = num3;
             } else {
                 meio = num3;
                 menor = num2;
             }
-        }
-        // num2 é o maior
-        if(num2 > num1 && num2 > num3) {
-            maior = num2;
-            if(num1 > num3) {
-                meio = num1;
-                menor = num3;
+        } else {
+            // num2 é o maior
+            if (num2 >= num1 && num2 >= num3) {
+                maior = num2;
+                if (num1 > num3) {
+                    meio = num1;
+                    menor = num3;
+                } else {
+                    meio = num3;
+                    menor = num1;
+                }
             } else {
-                meio = num3;
-                menor = num1;
+                // num3 é o maior
+                if (num3 >= num1 && num3 >= num2) {
+                    maior = num3;
+                    if (num1 > num2) {
+                        meio = num1;
+                        menor = num2;
+                    } else {
+                        meio = num2;
+                        menor = num1;
+                    }
+                }
             }
         }
-        // num3 é o maior
-        if(num3 > num1 && num3 > num2) {
-            maior = num3;
-            if(num1 > num2) {
-                meio = num1;
-                menor = num2;
-            } else {
-                meio = num2;
-                menor = num1;
-            }
-        }
+
         numerosAux = String.valueOf(maior) + String.valueOf(meio) + String.valueOf(menor);
         resultado = Integer.parseInt(numerosAux);
 
         numeros.setText(numerosStr);
-        avanco.setText("Jogatina "+String.valueOf(contadorInicial)+" de "+String.valueOf(contadorFinal));
+        avanco.setText("Jogatina " + String.valueOf(contadorInicial) + " de " + String.valueOf(contadorFinal));
     }
 
     public void reiniciaJogo() {
@@ -180,11 +183,11 @@ public class JogoMaiorNumero extends AppCompatActivity {
     }
 
     public void limpaResposta() {
-        if(!resposta.toString().equals("")) {
+        if (!resposta.toString().equals("")) {
             resposta.setText("");
         }
 
-        if(!numeros.toString().equals("")) {
+        if (!numeros.toString().equals("")) {
             numeros.setText("");
         }
     }
@@ -193,7 +196,7 @@ public class JogoMaiorNumero extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if(id == android.R.id.home) {
+        if (id == android.R.id.home) {
             this.finish();
         }
 

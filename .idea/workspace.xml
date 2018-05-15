@@ -73,11 +73,11 @@
       <file leaf-file-name="JogoMaiorNumero.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/androidpro/matematicadivertida/JogoMaiorNumero.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="188" column="9" lean-forward="false" selection-start-line="188" selection-start-column="9" selection-end-line="188" selection-end-column="9" />
+            <state relative-caret-position="164">
+              <caret line="127" column="100" lean-forward="true" selection-start-line="127" selection-start-column="100" selection-end-line="127" selection-end-column="100" />
               <folding>
-                <element signature="e#3021#3176#0" expanded="true" />
-                <element signature="e#3175#3176#0" expanded="true" />
+                <element signature="e#3024#3179#0" expanded="true" />
+                <element signature="e#3178#3179#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2185,6 +2185,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -2201,7 +2202,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32744783" sideWeight="0.49394855" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32744783" sideWeight="0.49394855" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -2273,11 +2274,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/androidpro/matematicadivertida/JogoMaiorNumero.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="188" column="9" lean-forward="false" selection-start-line="188" selection-start-column="9" selection-end-line="188" selection-end-column="9" />
+        <state relative-caret-position="164">
+          <caret line="127" column="100" lean-forward="true" selection-start-line="127" selection-start-column="100" selection-end-line="127" selection-end-column="100" />
           <folding>
-            <element signature="e#3021#3176#0" expanded="true" />
-            <element signature="e#3175#3176#0" expanded="true" />
+            <element signature="e#3024#3179#0" expanded="true" />
+            <element signature="e#3178#3179#0" expanded="true" />
           </folding>
         </state>
       </provider>
