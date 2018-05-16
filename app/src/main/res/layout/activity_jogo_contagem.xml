@@ -64,4 +64,13 @@
         android:layout_marginTop="56dp"
         android:textAppearance="@android:style/TextAppearance.Medium"
         tools:text="Jogadas" />
+
+    <TextView
+        android:id="@+id/respostaTeste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        tools:text="RespostaTeste" />
 </android.widget.RelativeLayout>
