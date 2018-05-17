@@ -7,22 +7,12 @@
     tools:context="br.com.androidpro.matematicadivertida.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="47dp"
-        android:text="Vamos jogar! :)"
-        android:textAppearance="@android:style/TextAppearance.Large" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="195dp"
         android:text="Selecione um jogo abaixo:"
         android:textAppearance="@android:style/TextAppearance.Medium" />
 
@@ -32,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="47dp"
+        android:layout_marginTop="21dp"
         android:onClick="onClickContagem"
         android:text="Contagem" />
 
@@ -55,4 +45,13 @@
         android:layout_marginTop="44dp"
         android:onClick="onClickMaiorNumero"
         android:text="Maior Número" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignEnd="@+id/buttonAritmetica"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/matematica" />
 </android.widget.RelativeLayout>

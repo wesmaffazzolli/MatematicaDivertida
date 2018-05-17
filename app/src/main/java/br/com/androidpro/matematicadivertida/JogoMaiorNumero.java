@@ -26,6 +26,9 @@ public class JogoMaiorNumero extends AppCompatActivity {
     int contadorInicial = 1;
     int contadorFinal = 5;
 
+
+    //C:\Users\Wesley\AndroidStudioProjects\MatematicaDivertida\app\src\main\res\drawable
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

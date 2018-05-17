@@ -70,12 +70,13 @@ public class JogoContagem extends AppCompatActivity {
         //Montagem das Opções
         montaOpcoes(respostaFiguraEscolhida);
         misturaLista(listaOpcoes);
+        preencheImagem(imagemFiguraEscolhida);
 
         //Preenche opções
         preencheBotoes();
 
         avanco.setText("Rodada "+contadorInicial+" de "+contadorFinal);
-        respostaTeste.setText(respostaFiguraEscolhida);
+        //respostaTeste.setText(respostaFiguraEscolhida);
     }
 
     public boolean validaResposta(String resposta) {
@@ -158,22 +159,67 @@ public class JogoContagem extends AppCompatActivity {
         button3.setText(listaOpcoes.get(2).toString());
     }
 
+    public void preencheImagem(String imagemSelecionada) {
+        switch (imagemSelecionada) {
+            case "abacaxi.jpg":
+                imagem.setImageResource(R.drawable.abacaxi);
+                break;
+            case "banana.png":
+                imagem.setImageResource(R.drawable.banana);
+                break;
+            case "caqui.jpg":
+                imagem.setImageResource(R.drawable.caqui);
+                break;
+            case "laranja.jpg":
+                imagem.setImageResource(R.drawable.laranja);
+                break;
+            case "limao.jpg":
+                imagem.setImageResource(R.drawable.limao);
+                break;
+            case "maca.png":
+                imagem.setImageResource(R.drawable.maca);
+                break;
+            case "melancia.jpg":
+                imagem.setImageResource(R.drawable.melancia);
+                break;
+            case "morango.jpg":
+                imagem.setImageResource(R.drawable.morango);
+                break;
+            case "tomate.jpg":
+                imagem.setImageResource(R.drawable.tomate);
+                break;
+            case "acerola.jpg":
+                imagem.setImageResource(R.drawable.acerola);
+                break;
+        }
+    }
+
     public void preencheHashs() {
         mapaFiguras = new HashMap<String,String>();
-        mapaFiguras.put( "maca.jpg", new String( "1" ));
-        mapaFiguras.put( "banana.jpg", new String( "2" ));
-        mapaFiguras.put( "uva.jpg", new String( "3" ));
-        mapaFiguras.put( "acerola.jpg", new String( "4" ));
-        mapaFiguras.put( "pitanga.jpg", new String( "5" ));
+        mapaFiguras.put( "abacaxi.jpg", new String( "5" ));
+        mapaFiguras.put( "banana.png", new String( "2" ));
+        mapaFiguras.put( "caqui.jpg", new String( "6" ));
+        mapaFiguras.put( "laranja.jpg", new String( "3" ));
+        mapaFiguras.put( "limao.jpg", new String( "4" ));
+        mapaFiguras.put( "maca.png", new String( "1" ));
+        mapaFiguras.put( "melancia.jpg", new String( "8" ));
+        mapaFiguras.put( "morango.jpg", new String( "3" ));
+        mapaFiguras.put( "tomate.jpg", new String( "9" ));
+        mapaFiguras.put( "acerola.jpg", new String( "7" ));
     }
 
     public void preencheListaFiguras() {
         listaFiguras = new ArrayList<>();
-        listaFiguras.add("maca.jpg");
-        listaFiguras.add("banana.jpg");
-        listaFiguras.add("uva.jpg");
+        listaFiguras.add("abacaxi.jpg");
+        listaFiguras.add("banana.png");
+        listaFiguras.add("caqui.jpg");
+        listaFiguras.add("laranja.jpg");
+        listaFiguras.add("limao.jpg");
+        listaFiguras.add("maca.png");
+        listaFiguras.add("melancia.jpg");
+        listaFiguras.add("morango.jpg");
+        listaFiguras.add("tomate.jpg");
         listaFiguras.add("acerola.jpg");
-        listaFiguras.add("pitanga.jpg");
     }
 
     private void instaciaDialog(String title, String msg) {
